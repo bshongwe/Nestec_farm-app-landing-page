@@ -1,0 +1,12 @@
+{
+  "name": "nestec_farm-app-landing-page",
+  "version": "1.0.0",
+  "description": "nestec-landing-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ernest Bhekizwe Shongwe",
+  "license": "ISC"
+}
