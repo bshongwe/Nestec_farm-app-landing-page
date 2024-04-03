@@ -55,6 +55,9 @@
      color: #888;
      font-size: 13px;
      height: 100%;
+     background-image: url('img/banner.png'); /* Background cover */
+     background-size: cover;
+     background-position: center;
 }
 
 /* Wrappers */
