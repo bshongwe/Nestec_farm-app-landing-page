@@ -7,61 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
 
-    <title>NESTEC</title>
+    <title>NESTEC | Landing Page</title>
 
-    <!-- Tab Browser Icon -->
+    <!-- Browser Tab Icon -->
     <link rel="icon" type="image/png" href="public/img/logo.png">
 
     <!-- Bootstrap core CSS-->
     <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
     <link href="public/vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="public/css/nestec.css" rel="stylesheet">
 
     <!-- Carousel -->
-    <link rel="stylesheet" href="public/vendor/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="public/vendor/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css">
 
-    <!-- Public fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap" rel="stylesheet">
 
 </head>
-<!-- End of Head -->
 
 <!-- Body -->
 <body id="page-top">
 
-   <!-- Loader: whilst page is loading -->
+   <!-- Page Loader -->
    <div id= "loading">
       <div style="margin: 0 auto;" >
           <div class="loader"></div>
       </div>
    </div>
 
-
-  <!-- Navigation -->
+<!-- Main Body -->
 <div style="display: none;" id="body-content">
     <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
        &nbsp;&nbsp; 
-       
+
        <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
        <i class="fas fa-2x fa-fw fa-bars"></i>
        </button> &nbsp;&nbsp;
-       
-       <a class="navbar-brand mr-1" href="index.html"><img width="70px" height="auto" class="img-fluid" alt="" src="public/img/logo.png"></a>
-       
-       <!-- Search Navbar -->
 
+       <a class="navbar-brand mr-1" href="../index.html"><img width="70px" height="auto" class="img-fluid" alt="" src="pblic/img/logo.png"></a>
+
+       <!-- Navbar Search -->
        <!-- Navbar -->
        <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar" style="justify-content: flex-end; width: 90%; display: flex;">
 
 	 <!-- Home -->
          <li class="nav-item mx-1">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#">
               <i class="fas fa-2x fa-fw fa-home"></i>
                Home
             </a>
@@ -69,24 +64,24 @@
 
 	  <!-- About -->
           <li class="nav-item mx-1">
-             <a class="nav-link" href="public/about.html">
+             <a class="nav-link" href="#">
                <i class="fas fa-2x fa-fw fa-info-circle"></i>
                 About
              </a>
           </li>
-          
-	  <!-- Features -->
-	  <li class="nav-item dropdown no-arrow mx-1">
+
+	  <!-- App Features -->
+          <li class="nav-item dropdown no-arrow mx-1">
              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-2x fa-fw fa-tools"></i>
-               Features
+               App Features
              </a>
              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-               <a class="dropdown-item" href="public/weather.html"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
-               <a class="dropdown-item" href="public/features.html"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
-               <a class="dropdown-item" href="public/inventory.html"><i class="fas fa-list-ol"></i> &nbsp; Inventory</a>
-               <a class="dropdown-item" href="public/news.html"><i class="far fa-newspaper"></i>&nbsp; News</a>
-               <a class="dropdown-item" href="public/seeds.html"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-list-ol"></i> &nbsp; Inventory Management</a>
+               <a class="dropdown-item" href="#"><i class="far fa-newspaper"></i>&nbsp;News</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
              </div>
           </li>
 
@@ -98,10 +93,10 @@
                <span id="user_profile">User</span>
              </a>
              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="account.html"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
-                <a class="dropdown-item" href="public/login.html">Login</a>
-                <a class="dropdown-item" href="public/register.html">Register</a>
-                <a class="dropdown-item" href="public/login.html">Forgot Password</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Register</a>
+                <a class="dropdown-item" href="#">Forgot Password</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
              </div>
@@ -109,13 +104,14 @@
        </ul>
     </nav>
 
-    <!-- Side Navbar -->
+    <!-- Navigation -->
     <div id="wrapper">
-       <ul class="sidebar navbar-nav">
 
-	  <!-- Home -->
+       <!-- Sidebar -->
+       <!-- Home -->
+       <ul class="sidebar navbar-nav">
           <li class="nav-item active">
-             <a class="nav-link" href="index.html">
+             <a class="nav-link" href="#">
              <i class="fas fa-fw fa-home"></i>
              <span>Home</span>
              </a>
@@ -123,13 +119,13 @@
 
 	  <!-- About -->
           <li class="nav-item">
-            <a class="nav-link" href="public/about.html">
+            <a class="nav-link" href="#">
             <i class="fas fa-fw fa-info-circle"></i>
             <span>About</span>
             </a>
          </li>
           
-	  <!-- Profile -->
+	 <!-- Profile -->
           <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-fw fa-user"></i>
@@ -137,86 +133,58 @@
              </a>
              <div class="dropdown-menu">
                 <h6 class="dropdown-header">Account Settings:</h6>
-                <a class="dropdown-item" href="public/login.html">Login</a>
-                <a class="dropdown-item" href="public/register.html">Register</a>
-                <a class="dropdown-item" href="public/login.html">Forgot Password</a>
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Register</a>
+                <a class="dropdown-item" href="#">Forgot Password</a>
                 <div class="dropdown-divider"></div>
              </div>
           </li>
 
-	  <!-- Features -->
+	  <!-- App Features -->
           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="public/features.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <a class="nav-link dropdown-toggle" href="features.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-fw fa-tools"></i>
-             <span>Features</span>
+             <span>App Features</span>
              </a>
              <div class="dropdown-menu">
-               <a class="dropdown-item" href="public/weather.html"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
-               <a class="dropdown-item" href="public/features.html"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
-               <a class="dropdown-item" href="public/inventory.html"><i class="fas fa-list-ol"></i> &nbsp; Inventory Management</a>
-               <a class="dropdown-item" href="public/news.html"><i class="far fa-newspaper"></i>&nbsp;News</a>
-               <a class="dropdown-item" href="public/seeds.html"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-list-ol"></i> &nbsp; Inventory Management</a>
+               <a class="dropdown-item" href="#"><i class="far fa-newspaper"></i>&nbsp;News</a>
+               <a class="dropdown-item" href="#"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
              </div>
           </li>
           <div class="dropdown-divider"></div>
        </ul>
-
-       <!-- Main content: INTRO -->
        <div id="content-wrapper">
          <div class="container-fluid pb-0">        
             <div class="row">
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                  <h2 style="color: green; font-weight: bolder;">NESTEC</h2>
+                  <h1 style="color: green; font-weight: bolder;">Welcome to NESTEC</h1>
                   <br>
-		  <p style="color: black; font-weight: bolder;">Nestec is an agriculture app whose aim is to improve agricultural
-		  practices faced by Sub-Saharan region farmers through its cutting edge tech stack. The app employs various
-		  APIs and detection AI technology.</p>
-
-                    <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="public/about.html" style="color: white;  font-size:x-large;">LEARN MORE</a></button>
+                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
+                  employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
+		  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
+		  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
                </div>
-
                <div class="col-sm-5 col-lg-5 col-md-5">
-                  <img src="public/img/agronomy-4.png" alt="new_farming" style="width: 80%">
-	       </div>
-
-               <div class="col-sm-12 col-lg-12 col-md-12">
-                  <!-- video clip -->
-               </div>
-            </div>
-
-	    <!-- Main content: APP FEATURES -->
-            <div class="row">
-               <div class="col-sm-5 offset-sm-4">
-                  <h1 style="color: green; font-weight: bolder;">APP FEATURES</h1>
+		              <img src="public/img/sprout.gif" alt="contact_us" style="width: 50%" height="auto">
                </div>
 
-	       <!-- APP FEATURES: inventory -->
-               <div class="col-sm-12 col-md-5 col-lg-5 video-card" style="margin-bottom: 2em; height: 300px; padding-top: 10%;background:linear-gradient(rgba(226,234,218,.5), rgba(226,234,218,.5)), url('public/img/work-2.png');">
-                  <h4 style = "color: black; font-weight: bolder">Farm Inventory</h4>
-                  <p style = "color: black; font-weight: bolder">Track your farminputs & produce</p>
-                  <p style="font-size: x-large; font-weight: bolder;"><a href="public/inventory.html" style="color: green;">Go to feature &#8594;</a></p>
+	       <!-- ********* Page 1 ******* --->
+
+	       <div class="col-sm-5 col-lg-5 col-md-5">
+                              <img src="public/img/sprout.gif" alt="contact_us" style="width: 50%" height="auto">
+               </div>
+	       <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
+                  <h1 style="color: green; font-weight: bolder;">Welcome to NESTEC</h1>
+                  <br>
+                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
+                  employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
+                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
+                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
                </div>
 
-	       <!-- APP FEATURES: weather forecast -->
-               <div class="margin-bottom: 2em; col-sm-12 col-md-6 offset-md-1 offset-lg-1 col-lg-6 video-card" style="height: 300px; padding-top: 10%;background:linear-gradient(rgba(204,233,246,.5), rgba(204,233,246,.5)), url('public/img/work-1.png');">
-                  <h4 style = "color: black; font-weight: bolder">Weather Service</h4>
-                  <p style = "color: black; font-weight: bolder">Get detailed weather reports</p>
-                  <p style="font-size: x-large; font-weight: bolder;"><a href="public/weather.html" style="color: green;">Go to feature &#8594;</a></p>
-               </div>
-
-	       <!-- APP FEATURES: Pest & Disease Detection -->
-               <div class="col-sm-12 col-md-5 col-lg-5 video-card" style="height: 300px; padding-top: 10%;background:linear-gradient(rgba(234,215,191, 0.5), rgba(234,215,191,.5)), url('public/img/expo-4.png');">
-                  <h4 style = "color: black; font-weight: bolder">Pest & Disease Detection</h4>
-                  <p style = "color: black; font-weight: bolder">Get top notch pest & disease detection</p>
-                     <p style="font-size: x-large; font-weight: bolder;"><a href="public/features.html" style="color: green;">Go to feature &#8594;</a></p>
-               </div>
-
-	       <!-- APP FEATURES: Outbreak ALterts -->
-               <div class="col-sm-12 col-md-6 offset-md-1 offset-lg-1 col-lg-6 video-card" style="height: 300px; padding-top: 10%;background:linear-gradient(rgba(254,220,252, 0.5), rgba(254,220,252,.5)), url('public/img/work-4.png');">
-                  <h4 style = "color: black; font-weight: bolder">News: Outbreak Alerts</h4>
-                  <p style = "color: black; font-weight: bolder">Get top notch pest & disease outbreak alerts (incl. insights)</p>
-                  <p style="font-size: x-large; font-weight: bolder;"><a href="public/news.html" style="color: green;">Go to feature &#8594;</a></p>
-               </div>
             </div>
          </div>
 
@@ -237,36 +205,55 @@
             </div>
          </footer>
        </div>
-
        <!-- /.content-wrapper -->
     </div>
 
     <!-- /#wrapper -->
-    <!-- Auto Scroll to Top Button -->
+    <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
     </a>
 
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+             </div>
+             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+             <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" onclick="logout('#');">Logout</a>
+             </div>
+          </div>
+       </div>
+    </div>
 
-    <!-- Bootstrap core JavaScript -->
+   <!-- JS Control Scripts -->
+
+    <!-- Bootstrap core JS -->
     <script src="public/vendor/jquery/jquery.min.js"></script>
     <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- jQuery plugin -->
+    <!-- Core jQuery-->
     <script src="public/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="public/vendor/owl-carousel/owl.carousel.js"></script>
 
     <!-- Page optimiser -->
     <script src="public/dist/bundle.js"></script>
 
+    <!-- Carousel -->
+    <script src="public/vendor/owl-carousel/owl.carousel.js"></script>
 
-    <!-- Custom script -->
+
+    <!-- Custom scripts for all pages-->
     <script src="public/js/custom.js"></script>
 
     <!-- Index script -->
-    <script src="public/js/index.js"></script>
+    <script src="public/js/loader.js" async defer></script>
     </div>
 
  </body>
