@@ -82,11 +82,12 @@
                Features
              </a>
              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-               <a class="dropdown-item" href="#weather"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
+               <a class="dropdown-item" href="#features-section"><i class="fas fa-fw fa-tools"></i> &nbsp; Features</a>
+               <a class="dropdown-item" href="#weather-section"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
                <a class="dropdown-item" href="#disease-detection"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
-               <a class="dropdown-item" href="#inventory"><i class="fas fa-list-ol"></i> &nbsp; Inventory</a>
-               <a class="dropdown-item" href="#news"><i class="far fa-newspaper"></i>&nbsp; News</a>
-               <a class="dropdown-item" href="#seed-database"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
+               <a class="dropdown-item" href="#inventory-section"><i class="fas fa-list-ol"></i> &nbsp; Inventory</a>
+               <a class="dropdown-item" href="#news-section"><i class="far fa-newspaper"></i>&nbsp; News</a>
+               <a class="dropdown-item" href="#seed-database-section"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
              </div>
           </li>
 
@@ -98,10 +99,12 @@
                <span id="user_profile">Contacts & Links</span>
              </a>
              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-fw fa-user-circle"></i> &nbsp; Email</a>
                 <a class="dropdown-item" href="#">LinkedIn</a>
                 <a class="dropdown-item" href="#">Git Hub</a>
                 <a class="dropdown-item" href="#">X | Twitter</a>
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Discord</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Go to App</a>
              </div>
@@ -129,17 +132,21 @@
             </a>
          </li>
           
-	  <!-- Profile -->
+	  <!-- Contacts & Links -->
           <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-fw fa-user"></i>
              <span>Contacts & Links</span>
              </a>
              <div class="dropdown-menu">
-                <h6 class="dropdown-header">Account Settings:</h6>
+                <h6 class="dropdown-header">Dev Links</h6>
+                <a class="dropdown-item" href="#">Email</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">LinkedIn</a>
                 <a class="dropdown-item" href="#">Git Hub</a>
                 <a class="dropdown-item" href="#">X | Twitter</a>
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Discord</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Go to App</a>
              </div>
@@ -147,16 +154,17 @@
 
 	  <!-- Features -->
           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="features">
                <i class="fas fa-fw fa-tools"></i>
              <span>Features</span>
              </a>
              <div class="dropdown-menu">
-               <a class="dropdown-item" href="#weather"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
+               <a class="dropdown-item" href="#features-section"><i class="fas fa-fw fa-tools"></i> &nbsp; Features</a>
+               <a class="dropdown-item" href="#weather-section"><i class="fas fa-cloud-showers-heavy"></i> &nbsp; Weather</a>
                <a class="dropdown-item" href="#disease-detection"><i class="fas fa-search"></i>&nbsp; Smart Detection</a>
-               <a class="dropdown-item" href="#inventory"><i class="fas fa-list-ol"></i> &nbsp; Inventory Management</a>
-               <a class="dropdown-item" href="#news"><i class="far fa-newspaper"></i>&nbsp;News</a>
-               <a class="dropdown-item" href="#seed-database"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
+               <a class="dropdown-item" href="#inventory-section"><i class="fas fa-list-ol"></i> &nbsp; Inventory Management</a>
+               <a class="dropdown-item" href="#news-section"><i class="far fa-newspaper"></i>&nbsp;News</a>
+               <a class="dropdown-item" href="#seed-database-section"><i class="fas fa-seedling"></i>&nbsp; Seed Database</a>
              </div>
           </li>
           <div class="dropdown-divider"></div>
@@ -167,94 +175,149 @@
          <div class="container-fluid pb-0">        
             <div class="row">
 
-	       <!-- -------******* WELCOME *******------- -->
-               <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                  <h1 style="color: green; font-weight: bolder;" id="#">Welcome to NESTEC</h1>
-                  <br>
-		  <p style="color: black; "><strong>Nestec</strong></p>
-		  <i>Empowering farmers, one harvest at a time</i></p>
-                  <p><i><strong>IoT in Agriculture at its absolute best with cutting edge technology, designed by a dedicated Software Devoloper for farmers in South Africa,
-		  addressing food security issues across the country, from Cape Town to Polokwane, Mafikeng to Port Elizabeth.</strong></i></p>
+	             <!-- -------******* WELCOME *******------- -->
+               <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;" id="#">
+                <h1 style="color: green; font-weight: bolder;">Welcome to NESTEC</h1>
+                <br>
+		            <p style="color: black; "><i><strong>Empowering farmers, one
+                  harvest at a time</strong></i>
+                </p>
+                <p>
+                  <i>
+                    <strong>Tech in Agriculture at its absolute best with
+                  cutting edge technology, designed by a dedicated farmer-
+                  turned-Software Devoloper for farmers in South Africa,
+                  addressing food security issues across the country, from Cape
+                  Town to Polokwane, Mafikeng to Port Elizabeth, Durban to the
+                  Karoo Desert.
+                    </strong>
+                  </i>
+                </p>
                </div>
                <div class="col-sm-5 col-lg-5 col-md-5">
 		              <img src="public/img/sprout.gif" alt="welcome_GIF" style="width: 50%" height="auto">
                </div>
 
 
-	       <!-- -------********* Page 1 *******------- --->
-	       <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/expo-2.png" alt="welcome_PNG" style="width: 95%" height="auto">
-	       </div>
-	       <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-		       <h1 style="color: green; font-weight: bolder;"><i>intro</i></h1>
-                  <br>
-		  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Try out app</a></button></p>
-		  <p style="color: black; "><strong>Nestec</strong></br>
-		  <i>Empowering farmers, one harvest at a time</i></p>
-		  <p><i>IoT in Agriculture at its absolute best with cutting edge technology, designed by a dedicated Software Devoloper for farmers in South Africa</i>
+	             <!-- -------********* intro *******------- --->
+	             <div class="col-sm-5 col-lg-5 col-md-5">
+                 <img src="public/img/splash.png" alt="welcome_PNG" style="width: 100%" height="auto">
+	             </div>
+	             <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
+                 <h1 style="color: green; font-weight: bolder;"><i>intro</i></h1>
+                 <br>
+                 <p>
+                   <strong>Nestec</strong> is a full stack agriculture app. It
+                   provides the user, oftenly, a farmer, with a digitalised
+                   farm management platform from the comfort of the preferred
+                   device; for web use, a dektop or laptop, whilst, for mobile
+                   and hand-held devices, making use of our app available on
+                   mobile store platforms.
+                 </p>
+                 <p>
+                   <strong>For hand-held devices...</strong>
+                   <img src="public/img/google-play.png" alt="welcome_PNG" style="width: 20%" height="auto">
+                   for android users, or
+                   <img src="public/img/apple-store.png" alt="welcome_PNG" style="width: 17%" height="auto">
+                   for iPhone users.
+                 </p>
+                 <p>
+                   <strong>Otherwise...</strong></br>
+                   follow this link for desktop versions, suitable for desktop
+                   and laptop use (select the suitable OS version):</br>
+                   <img src="public/img/windows.png" alt="welcome_PNG" style="width: 5%" height="auto">
+                   for Windows version, or
+                   <img src="public/img/mac.jpg" alt="welcome_PNG" style="width: 5%" height="auto">
+                   for Mac version.</br>
+                   <strong>Alternatively, you can try the web version...</strong>
+		             <p>Click and follow the button below and discover why most South African
+                 farmers are now switching to our cutting edge tech app as well
+                 as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">App demo</a></button>
+                 </p>
+		             <p><i>App development in Agriculture at its absolute best with cutting
+                 edge technology, designed by a dedicated Software Devoloper
+                 for farmers in South Africa</i>
                </div>
 
 
 
-	       <!-- -------********* Page 2 *******------- --->
+	             <!-- -------********* what is Nestec? *******------- --->
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-		       <h1 style="color: green; font-weight: bolder;"><i>what is Nestec?</i></h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack.</br>
-		  The app employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection</br>AI technology.</p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Try out app</a></button></p>
+                 <h1 style="color: green; font-weight: bolder;"><i>what is Nestec?</i></h1>
+                 <br>
+                 <p style="color: black; "><strong>Nestec</strong> is an
+                 agriculture app whose aim is to improve agricultural practices
+                 faced by South African farmers through its cutting edge tech
+                 stack.</br>
+		             The app employs agriculture news content APIs and weather
+                 forecast APIs, helps the user manage their farm using cutting
+                 edge pest and disease detection AI technology.</p>
+                 <p>Click and follow the button below and discover why most
+                   South African farmers are now switching to our cutting edge
+                   tech app as well as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Try out app</a></button></p>
                </div>
-	       <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/expo-5.png" alt="intro_PNG" style="width: 75%" height="auto">
-	       </div>
+	             <div class="col-sm-5 col-lg-5 col-md-5">
+                 <img src="public/img/expo-2.png" alt="intro_PNG" style="width: 85%" height="auto">
+	             </div>
 
 
 
-	       <!-- -------********* Page 3 *******------- --->
+	             <!-- -------********* who can use Nestec? *******------- --->
                <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/expo-1.png" alt="features" style="width: 75%" height="auto">
+                 <img src="public/img/expo-5.png" alt="features" style="width: 75%" height="auto">
                </div>
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                       <h1 style="color: green; font-weight: bolder;"><i>who can use Nestec?</i></h1>
-                  <br>
-		  <p style="color: black; "><strong>Nestec</strong> was mainly developed for farmers in the Vaal, whose target market is the Jo'burg Market. However, its development spans to the entire Republic of South Africa.</br>
-		  Moreover, its user friendly interface allows ease of use by anyone, regardless of tech and agriculture background.</p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Try out app</a></button></p>
+                 <h1 style="color: green; font-weight: bolder;"><i>who can use Nestec?</i></h1>
+                 <br>
+		             <p style="color: black; "><strong>Nestec</strong> was mainly
+                 developed for farmers in the Vaal, whose target market is the
+                 Jo'burg Market. However, its development spans to the entire
+                 Republic of South Africa. Moreover, its user friendly
+                 interface allows ease of use by anyone, regardless of tech and
+                 agriculture background.</p>
+                 <p>Click and follow the button below and discover why most
+                   South African farmers are now switching to our cutting edge
+                   tech app as well as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Try out app</a></button></p>
                </div>
-
             </div>
          </div>
 
-	 <div class="container-fluid pb-0">
-            <div class="row">
+	       <div class="container-fluid pb-0">
+           <div class="row">
+             <!-- -------******* FEATURES *******------- -->
+             <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
+               <h1 style="color: green; font-weight: bolder;">FEATURES</h1>
+               <br>
+               <p style="color: black; "><strong>Nestec</strong> is an
+               agriculture app whose aim is to improve agricultural practices
+               faced by South African farmers through its cutting edge tech
+               stack. The app</br>
+		           employs agriculture news content APIs and weather forecast APIs,
+               helps the user manage their farm using cutting edge pest and
+               disease detection AI technology.</br>
+		           <br></br>
+		           <i>Explore the app's features....</i></p>
+               <p>Click and follow the button below and discover why most South
+                 African farmers are now switching to our cutting edge tech app
+                 as well as why it comes highly recommended.</br></br>
+               <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
+             </div>
+             <div class="col-sm-5 col-lg-5 col-md-5">
+               <img src="public/img/prototype.gif" alt="welcome_GIF" style="width: 50%" height="auto">
+             </div>
 
-               <!-- -------******* FEATURES *******------- -->
-               <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                  <h1 style="color: green; font-weight: bolder;">FEATURES</h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
-		  employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</br>
-		  <br></br>
-		  <i>Explore the app's features....</i></p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
-               </div>
-               <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/prototype.gif" alt="welcome_GIF" style="width: 50%" height="auto">
-               </div>
 
-
-               <!-- -------********* Page 1 *******------- --->
-               <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/landing.png" alt="welcome_PNG" style="width: 75%" height="auto">
-               </div>
-               <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                       <h1 style="color: green; font-weight: bolder;"><i>inventory</i></h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
+             <!-- -------********* Page 1 *******------- --->
+             <div class="col-sm-5 col-lg-5 col-md-5">
+               <img src="public/img/work-2.png" alt="welcome_PNG" style="width: 75%" height="auto">
+             </div>
+             <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
+               <h1 style="color: green; font-weight: bolder;"><i>inventory</i></h1>
+               <br>
+               <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
                   employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
                   <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
                   <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
@@ -324,56 +387,59 @@
                <!-- -------******* ABOUT *******------- -->
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;" id="about-section">
                   <h1 style="color: green; font-weight: bolder;">ABOUT</h1>
+                  <p>In this section, discover how <strong>Nestec</strong> came
+                  about, how and why it was developed, as well as the face
+                  behind its inception.</p>
                </div>
                <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/prototype.gif" alt="welcome_GIF" style="width: 50%" height="auto">
+                 <img src="public/img/landing.png" alt="welcome_GIF" style="width: 75%" height="auto">
                </div>
 
 
                <!-- -------********* Page 1 *******------- --->
                <div class="col-sm-5 col-lg-5 col-md-5">
-                              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hPZtlr7WyqU?si=rWAmc3JvdU4vEHEq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hPZtlr7WyqU?si=rWAmc3JvdU4vEHEq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                </div>
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                       <h1 style="color: green; font-weight: bolder;"><i>how did Nestec come about?</i></h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
-                  employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
+                 <h1 style="color: green; font-weight: bolder;"><i>how did Nestec come about?</i></h1>
+                 <br>
+                 <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
+                 employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
+                 <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
                </div>
 
 
 
                <!-- -------********* Page 2 *******------- --->
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                       <h1 style="color: green; font-weight: bolder;">app dev socials & project links</h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack.</br>
-                  The app employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection</br>AI technology.</p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
+                 <h1 style="color: green; font-weight: bolder;">app dev socials & project links</h1>
+                 <br>
+                 <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack.</br>
+                 The app employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection</br>AI technology.</p>
+                 <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
                </div>
                <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/plant-ai.gif" alt="features" style="width: 85%" height="auto">
+                 <img src="public/img/plant-ai.gif" alt="features" style="width: 85%" height="auto">
                </div>
 
 
 
                <!-- -------********* Page 3 *******------- --->
                <div class="col-sm-5 col-lg-5 col-md-5">
-                              <img src="public/img/expo-3.png" alt="features" style="width: 65%" height="auto">
+                 <img src="public/img/expo-3.png" alt="features" style="width: 65%" height="auto">
                </div>
                <div class="col-sm-7 col-lg-7 col-md-7" style="padding-top: 10em;">
-                       <h1 style="color: green; font-weight: bolder;"><i>optional task: videos</i></h1>
-                  <br>
-                  <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
-                  employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
-                  <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
-                  <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
+                 <h1 style="color: green; font-weight: bolder;"><i>optional task: videos</i></h1>
+                 <br>
+                 <p style="color: black; "><strong>Nestec</strong> is an agriculture app whose aim is to improve agricultural practices faced by South African farmers through its cutting edge tech stack. The app</br>
+                 employs agriculture news content APIs and weather forecast APIs, helps the user manage their farm using cutting edge pest and disease detection AI technology.</p>
+                 <p>Click and follow the button below and discover why most South African farmers are now switching to our cutting edge tech app as well as why it comes highly recommended.</br></br>
+                 <button class="btn btn-lg" style="outline: white; border: white 2px; background: green; border-radius: 16px;"> <a href="#" style="color: white;  font-size:x-large;">Nestec Web App</a></button></p>
                </div>
 
-            </div>
+           </div>
 
             
 
