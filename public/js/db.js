@@ -1,10 +1,18 @@
+#!/usr/bin/node
+
+// IIFE Code Wrap
 (function($) {
   (function() {
 
+    // DB object + methods: loading, inserting, updating and deleting
+    // (CRUD)
     var db = {
 
+      // Method: Load - from clients array on provided filter
       loadData: function(filter) {
+        // jQuery grep filter
         return $.grep(this.clients, function(client) {
+          // Client validation using line 14 method
           return (!filter.Name || client.Name.indexOf(filter.Name) > -1) &&
             (filter.Age === undefined || client.Age === filter.Age) &&
             (!filter.Address || client.Address.indexOf(filter.Address) > -1) &&
@@ -13,22 +21,29 @@
         });
       },
 
+      // Method: Insert (from clients array)
       insertItem: function(insertingClient) {
+        // Push new client into clients array
         this.clients.push(insertingClient);
       },
 
+      // Method: Update (existing item in clients array)
       updateItem: function(updatingClient) {},
 
+      // Method: Delete (in clients array)
       deleteItem: function(deletingClient) {
+        // Finding index (to delete from array)
         var clientIndex = $.inArray(deletingClient, this.clients);
+        // Removing (from clients array)
         this.clients.splice(clientIndex, 1);
       }
 
     };
 
+    // DB object global exposure, attaching to window object
     window.db = db;
 
-
+    // Countries array
     db.countries = [{
         Name: "",
         Id: 0
@@ -63,6 +78,7 @@
       }
     ];
 
+    // Client objects array
     db.clients = [{
         "Name": "Otto Clay",
         "Age": 61,
@@ -765,6 +781,7 @@
       }
     ];
 
+    // User array objects
     db.users = [{
         "ID": "x",
         "Account": "A758A693-0302-03D1-AE53-EEFE22855556",
