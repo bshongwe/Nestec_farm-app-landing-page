@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 'use strict'
 
 var gulp = require('gulp');

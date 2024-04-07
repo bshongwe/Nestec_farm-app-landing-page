@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 (function($) {
   'use strict';
   //Open submenu on hover in compact sidebar mode and horizontal menu mode

@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 'use strict';
 
 function initMap() {
@@ -9,7 +11,6 @@ function initMap() {
 
   // Map Zooming
   var MapZoom = 14;
-
 
   // Basic Map
   if($("#map-with-marker").length) {

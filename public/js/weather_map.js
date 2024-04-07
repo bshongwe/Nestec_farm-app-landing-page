@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
  // Public api key for maps
  mapboxgl.accessToken = 'pk.eyJ1IjoiY2VwaGFzLWtpbmciLCJhIjoiY2s3dGpnd2YxMHZ0YzNtb3VoenNmbmlrYyJ9.xojeHRyzsIqupEenk6nDGw';
     
@@ -17,11 +19,11 @@
 
      center: [28.252900579123974, -26.212685136383307], // starting position [lng, lat]
 
-        //disabled because users may find the bearing difficult to remove
+        // disabled because users may find the bearing difficult to remove
         // it looks nice though for a navigation style map
 
-     //pitch: 60, //degrees
-     //bearing: 90, //degrees
+     // pitch: 60,
+     // bearing: 90,
      zoom: 12 // starting zoom
  });
 // control on getting the location of the user
@@ -32,17 +34,14 @@ var geolocate = new mapboxgl.GeolocateControl({
     },
     trackUserLocation: true
 });
-// Add the control to the map.
+// Adds control to map
 map.addControl(geolocate);
 
-// try locating the user on load
+// Locates user on load
 map.on('load', function() {
 
 geolocate.trigger();
-
 });
-
-
 
 geolocate.on('geolocate', function(e) {
    var long = e.coords.longitude;
@@ -73,7 +72,7 @@ geolocate.on('geolocate', function(e) {
      coordinates.innerHTML =
      'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
 
-     //obtaining the co-ordinates
+     // obtaining the co-ordinates
      var longitude = lngLat.lng;
      var latitude = lngLat.lat;
 
@@ -83,7 +82,7 @@ geolocate.on('geolocate', function(e) {
      
  marker.on('dragend', onDragEnd);
 
-  //Create  the search box
+  // Create  the search box
   var geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl,
@@ -91,7 +90,7 @@ geolocate.on('geolocate', function(e) {
         color: 'green'
     },
     placeholder: "Locations in South Africa",
-    //limit search to South Africa
+    // limit search to South Africa
     countries: 'south'
     });
     // control the search box 
@@ -113,7 +112,7 @@ geolocate.on('geolocate', function(e) {
     document.getElementById('lat').value = lat;
  });
 
- //add compass and navigation
+ // add compass and navigation
  var nav = new mapboxgl.NavigationControl();
  map.addControl(nav, 'top-right');
 
@@ -121,35 +120,26 @@ geolocate.on('geolocate', function(e) {
     setTimeout(function(){
         map.resize();
     }, 8000);
- 
 });
-
 /*  **************************** End of Mapbox Functions /*  **************************** */
-
 
 /*  ****************************  Open Weather Map  API ********************************* */
 const form = document.getElementById('weatherForm');
-
 const apiKey = "4d6df78011ac548d43caecc4657d434b";
 
 // Processing begins right after submission
-
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
     const form_longitude = document.getElementById('long').value;
-
     const form_latitude = document.getElementById('lat').value;
  
-
     const parent_div = document.getElementById("long_term_weather_cards");
 
     const short_term_cards = document.getElementsByClassName("owl-wrapper")[0];
     
-
     parent_div.replaceChildren();
     
-
     // AJAX call to open weather API for a 30 day forecast
     const url = `https://pro.openweathermap.org/data/2.5/forecast/climate?lat=${form_latitude}&lon=${form_longitude}&appid=${apiKey}&units=metric`;
 
@@ -274,18 +264,14 @@ form.addEventListener("submit", function(e) {
             one_corousel.innerHTML = markup2;
             corousel_div.appendChild(one_corousel);
             //short_term_cards.appendChild(corousel_div);
-
-            
+        
         }
       })
       .catch( e => {
         console.log("Error2: =>>");
         console.log(e);
       });
-
 });
-
-
 
 
 function timeConverter(UNIX_timestamp){

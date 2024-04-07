@@ -1,7 +1,9 @@
+#!/usr/bin/node
+
 (function($) {
   'use strict';
 
-  //Simple graph
+  // Simple graph
   if ($("#rickshaw-simple").length) {
     var rickshawSimple = new Rickshaw.Graph({
       element: document.getElementById("rickshaw-simple"),
@@ -67,7 +69,7 @@
     rickshawSimple.render();
   }
 
-  //Timescale
+  // Timescale
   if ($("#rickshaw-time-scale").length) {
     var seriesData = [
       [],
@@ -120,7 +122,7 @@
     });
   }
 
-  //Bar chart
+  // Bar chart
   if ($("#rickshaw-bar").length) {
     var seriesData = [
       [],
@@ -154,8 +156,7 @@
     rickshawBar.render();
   }
 
-  //Line chart
-
+  // Line chart
   if ($("#rickshaw-line").length) {
     // set up our data series with 50 random data points
 
@@ -171,7 +172,6 @@
     }
 
     // instantiate our graph!
-
     var rickshawLine = new Rickshaw.Graph({
       element: document.getElementById("rickshaw-line"),
       width: 400,
@@ -202,8 +202,7 @@
     });
   }
 
-  //scatter plot
-
+  // scatter plot
   if ($("#rickshaw-scatter").length) {
     // set up our data series with 50 random data points
 
@@ -222,7 +221,6 @@
     }
 
     // instantiate our graph!
-
     var rickshawScatter = new Rickshaw.Graph({
       element: document.getElementById("rickshaw-scatter"),
       width: 400,
@@ -251,8 +249,7 @@
   }
 
 
-  //Multiple renderer
-
+  // Multiple renderer
   if ($("#rickshaw-multiple").length) {
     var seriesData = [
       [],
@@ -326,5 +323,4 @@
       graph: rickshawMultiple
     });
   }
-
 })(jQuery);

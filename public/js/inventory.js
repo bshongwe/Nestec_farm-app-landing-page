@@ -1,7 +1,9 @@
+#!/usr/bin/node
+
 $(document).ready(function(){
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-          // User is signed in.
+          // User is signed in
           console.log("we are in");
           const nestec_user = firebase.auth().currentUser;
           if(nestec_user.emailVerified == false){
@@ -35,10 +37,10 @@ $(document).ready(function(){
               $("#verify_banner").fadeOut(300000, 'linear');
             }, 100); 
           }else{
-            //force refresh on the user token if a  user verifies their email
+            // force refresh on the user token if a  user verifies their email
             firebase.auth().currentUser.getIdToken(true);
 
-            //get the the updated details
+            // get the the updated details
             firebase.auth().currentUser.reload();
 
           }
@@ -125,9 +127,9 @@ $(document).ready(function(){
 
   function getUser(){
 
-    //force refresh on the user token if a  user verifies their email
+    // force refresh on the user token if a  user verifies their email
     firebase.auth().currentUser.getIdToken(true);
-    //get the the updated details
+    // get the the updated details
     firebase.auth().currentUser.reload();
   
     const current_user = firebase.auth().currentUser;
@@ -248,10 +250,10 @@ $(document).ready(function(){
 
 document.getElementById("equipment_form").addEventListener('submit', function(e) {
     e.preventDefault();
-    //if the form is valid
+    // if the form is valid
     $("#equipment_form").submit(function () {
         if ($(this).valid()) {
-            //prevent double submissions
+            // prevent double submissions
         if($(this).data === "sumitted"){
             e.preventDefault();
         }else{
@@ -289,10 +291,10 @@ document.getElementById("equipment_form").addEventListener('submit', function(e)
 
 document.getElementById("employee_form").addEventListener('submit', function(e) {
     e.preventDefault();
-    //if the form is valid
+    // if the form is valid
     $("#employee_form").submit(function () {
         if ($(this).valid()) { 
-                     //prevent double submissions
+                     // prevent double submissions
         if($(this).data === "sumitted"){
             e.preventDefault();
         }else{
@@ -333,10 +335,10 @@ document.getElementById("employee_form").addEventListener('submit', function(e) 
 
 document.getElementById("add_task_form").addEventListener('submit', function(e) {
     e.preventDefault();
-    //if the form is valid
+    // if the form is valid
     $("#add_task_form").submit(function () {
         if ($(this).valid()) {
-            //prevent double submissions
+            // prevent double submissions
         if($(this).data === "sumitted"){
             e.preventDefault();
         }else{

@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 var g1, g2, gg1, g7, g8, g9, g10;
 
 window.onload = function() {

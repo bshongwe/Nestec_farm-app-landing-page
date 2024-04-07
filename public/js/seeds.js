@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 $('#county').on('change', function(e) {
     var county = document.getElementById("county").value;
     var zone_element = document.getElementById('zone');
@@ -79,7 +81,6 @@ $('#county').on('change', function(e) {
                 zone_element.appendChild(option);
             }
         }
-        
 });
 
 $('document').ready(function(){
@@ -131,17 +132,17 @@ $('document').ready(function(){
 });
 
 document.getElementById("seed_form").addEventListener('submit', function(e){
-    //prevent default
+    // prevent default
     e.preventDefault();
     if($( "#county" ).val() =='' || $( "#zone" ).val() =='' || $( "#crop" ).val() ==''){
         e.preventDefault(); 
     }else{
-        //console.log("okay");
+        // console.log("okay");
     }
 
     var county = document.getElementById("county").value;
     var zone = document.getElementById("zone").value;
-    //changing zone to match the backend
+    // changing zone to match the backend
     if(zone == "coastal"){
         zone = "COASTAL OR DRYLAND";
     }
@@ -157,7 +158,7 @@ document.getElementById("seed_form").addEventListener('submit', function(e){
 
     var crop = document.getElementById("crop").value;
 
-    //get the selected categories
+    // get the selected categories
     var category_elements = $('input[type=checkbox]:checked');
     var category = {};
     for(var i = 0; i<category_elements.length; i++){
@@ -165,35 +166,34 @@ document.getElementById("seed_form").addEventListener('submit', function(e){
         var value = category_elements[i].value;
         category[key] = value;
     }
-    //category = JSON.stringify(category);
+    // category = JSON.stringify(category);
     console.log(category);
-    //CATEGORY 1
-    //if(category[])
+    // CATEGORY 1
+    // if(category[])
     
 
     var seed_database =  firebase.database().ref("seed_database/");
-    //read the data once from the database
-    //we dont expect it to keep on changing while the user is searching the right product
+    // read the data once from the database
+    // we dont expect it to keep on changing while the user is searching the right product
     var seed_database_array=[];
   
-      //read the database once and store the information into an array
+      // read the database once and store the information into an array
     seed_database.once('value')
     .then((SnapShotRecords) => {
       SnapShotRecords.forEach(function(childSnapShotRecords){
-        //key record
+        // key record
         var childKey = childSnapShotRecords.key;
-        //data values
+        // data values
         var childData = childSnapShotRecords.val();
-        //console.log(childData);
+        // console.log(childData);
         seed_database_array.push(childData);
-
       });
     })
     .then((seed_array) =>{
 
       var seed_array=[];
       seed_array= seed_database_array;
-      //get only the results of the ecological zone that the user has selected and the 
+      // get only the results of the ecological zone that the user has selected and the 
       var results =  seed_array.filter(item => item.ECOLOGICAL_ZONE == zone && item.CROP == crop);
         // Category 1
 
@@ -208,7 +208,7 @@ document.getElementById("seed_form").addEventListener('submit', function(e){
       }else if(category["category1"] == "Late"){
         results =  results.filter(item => item.LATE == "Y");
       }
-        // Category 2
+      // Category 2
 
     if (category["category2"] == "Default"){
         // do not filter
@@ -255,7 +255,7 @@ document.getElementById("seed_form").addEventListener('submit', function(e){
     }else if(category["category6"] == "No"){
         results =  results.filter(item => item.STORAGE_AND_FIELD_PEST_RESISTANCE == "N");
     }
-        //results div
+      //results div
       const results_div = document.getElementById('results');
       results_div.replaceChildren();
       
@@ -325,7 +325,4 @@ document.getElementById("seed_form").addEventListener('submit', function(e){
       console.log(results);
       
     });
-    
 });
-
-

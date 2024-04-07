@@ -1,8 +1,10 @@
+#!/usr/bin/node
+
 (function($) {
   'use strict';
   $(function() {
 
-    //basic config
+    // basic config
     if ($("#js-grid").length) {
       $("#js-grid").jsGrid({
         height: "500px",
@@ -66,8 +68,7 @@
       });
     }
 
-
-    //Static
+    // Static
     if ($("#js-grid-static").length) {
       $("#js-grid-static").jsGrid({
         height: "500px",
@@ -124,7 +125,7 @@
       });
     }
 
-    //sortable
+    // sortable
     if ($("#js-grid-sortable").length) {
       $("#js-grid-sortable").jsGrid({
         height: "500px",
