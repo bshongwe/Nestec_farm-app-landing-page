@@ -4,7 +4,13 @@
   "description": "nestec-landing-page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp serve",
+    "serve:lite": "gulp serve:lite",
+    "sass:watch": "gulp sass:watch",
+    "inject": "gulp inject",
+    "bundleVendors": "gulp bundleVendors",
+    "default": "gulp"
   },
   "keywords": [],
   "author": "Ernest Bhekizwe Shongwe",
